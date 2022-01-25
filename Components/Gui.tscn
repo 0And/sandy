@@ -1,0 +1,168 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Components/Gui.cs" type="Script" id=1]
+[ext_resource path="res://Textures/pause.png" type="Texture" id=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+void fragment() {
+	COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, 2.0);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+
+[node name="Gui" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="GameScreen" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScoreContainer" type="AspectRatioContainer" parent="GameScreen"]
+anchor_right = 1.0
+anchor_bottom = 0.1
+margin_top = 20.0
+margin_bottom = 20.0
+ratio = 0.0
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="GameScreen/ScoreContainer"]
+margin_left = 512.0
+margin_right = 512.0
+margin_bottom = 60.0
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BestContainer" type="AspectRatioContainer" parent="GameScreen"]
+anchor_right = 1.0
+anchor_bottom = 0.05
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = 10.0
+ratio = 0.0
+stretch_mode = 1
+alignment_horizontal = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Indicator" type="Control" parent="GameScreen/BestContainer"]
+margin_left = 1004.0
+margin_right = 1004.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Container" type="AspectRatioContainer" parent="GameScreen/BestContainer/Indicator"]
+anchor_bottom = 1.0
+stretch_mode = 1
+alignment_horizontal = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="GameScreen/BestContainer/Indicator/Container"]
+margin_left = -20.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Control" type="Control" parent="GameScreen/BestContainer/Indicator/Container/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.9
+anchor_bottom = 0.9
+rect_rotation = 45.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="GameScreen/BestContainer/Indicator/Container/Control/Control"]
+anchor_left = -0.5
+anchor_top = -0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+color = Color( 0.92549, 0.92549, 0.443137, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="GameScreen/BestContainer"]
+margin_left = 1004.0
+margin_right = 1004.0
+margin_bottom = 20.0
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="PauseLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="PauseScreen" type="Control" parent="PauseLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Blur" type="ColorRect" parent="PauseLayer/PauseScreen"]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Black" type="ColorRect" parent="PauseLayer/PauseScreen"]
+modulate = Color( 1, 1, 1, 0.498039 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="TextureRect" parent="PauseLayer/PauseScreen"]
+modulate = Color( 0.854902, 0.905882, 0.905882, 1 )
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.6
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}

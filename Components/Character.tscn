@@ -1,0 +1,940 @@
+[gd_scene load_steps=42 format=2]
+
+[ext_resource path="res://Components/Character.cs" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.225, 0.5, 0.175 )
+
+[sub_resource type="SpatialMaterial" id=56]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.0980392, 0.054902, 0.137255, 1 )
+
+[sub_resource type="CylinderMesh" id=30]
+material = SubResource( 56 )
+top_radius = 0.05
+bottom_radius = 0.1
+height = 0.04
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=31]
+material = SubResource( 56 )
+top_radius = 0.1
+bottom_radius = 0.125
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=32]
+material = SubResource( 56 )
+top_radius = 0.125
+bottom_radius = 0.125
+height = 0.25
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=33]
+material = SubResource( 56 )
+top_radius = 0.125
+bottom_radius = 0.15
+height = 0.1
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=34]
+material = SubResource( 56 )
+top_radius = 0.15
+bottom_radius = 0.2
+height = 0.1
+radial_segments = 5
+rings = 0
+
+[sub_resource type="SpatialMaterial" id=57]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.54902, 0.439216, 0.313726, 1 )
+
+[sub_resource type="CylinderMesh" id=35]
+material = SubResource( 57 )
+top_radius = 0.15
+bottom_radius = 0.15
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=36]
+material = SubResource( 57 )
+top_radius = 0.15
+bottom_radius = 0.1
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=37]
+material = SubResource( 56 )
+top_radius = 0.1
+bottom_radius = 0.2
+height = 0.05
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=38]
+material = SubResource( 56 )
+top_radius = 0.2
+bottom_radius = 0.25
+height = 0.05
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=39]
+material = SubResource( 56 )
+top_radius = 0.25
+bottom_radius = 0.25
+height = 0.15
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=40]
+material = SubResource( 56 )
+top_radius = 0.25
+bottom_radius = 0.275
+height = 0.2
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=41]
+material = SubResource( 56 )
+top_radius = 0.275
+bottom_radius = 0.25
+height = 0.05
+radial_segments = 6
+rings = 0
+
+[sub_resource type="SpatialMaterial" id=58]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.0705882, 0.054902, 0.0352941, 1 )
+
+[sub_resource type="CylinderMesh" id=42]
+material = SubResource( 58 )
+top_radius = 0.1
+bottom_radius = 0.125
+height = 0.2
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=43]
+material = SubResource( 58 )
+top_radius = 0.125
+bottom_radius = 0.1
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=44]
+material = SubResource( 58 )
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="CylinderMesh" id=45]
+material = SubResource( 58 )
+top_radius = 0.1
+bottom_radius = 0.05
+height = 0.05
+radial_segments = 5
+rings = 0
+
+[sub_resource type="SpatialMaterial" id=60]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.552941, 0.188235, 0.188235, 1 )
+
+[sub_resource type="CubeMesh" id=61]
+material = SubResource( 60 )
+size = Vector3( 0.1, 0.025, 0.01 )
+
+[sub_resource type="SpatialMaterial" id=62]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.121569, 0.0823529, 0.054902, 1 )
+
+[sub_resource type="CubeMesh" id=63]
+material = SubResource( 62 )
+size = Vector3( 0.05, 0.05, 0.01 )
+
+[sub_resource type="CylinderMesh" id=48]
+material = SubResource( 57 )
+top_radius = 0.2
+bottom_radius = 0.2
+height = 0.22
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=49]
+material = SubResource( 57 )
+top_radius = 0.2
+bottom_radius = 0.15
+height = 0.05
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=50]
+material = SubResource( 57 )
+top_radius = 0.15
+bottom_radius = 0.05
+height = 0.02
+radial_segments = 6
+rings = 0
+
+[sub_resource type="SpatialMaterial" id=59]
+params_diffuse_mode = 4
+params_specular_mode = 3
+albedo_color = Color( 0.513726, 0.486275, 0.670588, 1 )
+
+[sub_resource type="SphereMesh" id=52]
+material = SubResource( 59 )
+radius = 0.075
+height = 0.15
+radial_segments = 6
+rings = 3
+
+[sub_resource type="CylinderMesh" id=53]
+material = SubResource( 56 )
+top_radius = 0.0
+bottom_radius = 0.2
+height = 0.1
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=54]
+material = SubResource( 56 )
+top_radius = 0.2
+bottom_radius = 0.225
+height = 0.1
+radial_segments = 6
+rings = 0
+
+[sub_resource type="CylinderMesh" id=55]
+material = SubResource( 56 )
+top_radius = 0.225
+bottom_radius = 0.225
+height = 0.1
+radial_segments = 6
+rings = 0
+
+[sub_resource type="Animation" id=65]
+resource_name = "Fall"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("RootMesh/RightShoulder:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 150, 0, 0 ), Vector3( 160, 0, 0 ), Vector3( 150, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("RootMesh/LeftShoulder:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 160, 0, 0 ), Vector3( 150, 0, 0 ), Vector3( 160, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("RootMesh/LeftHip:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("RootMesh/RightHip:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RootMesh:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("RootMesh/Head:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=66]
+resource_name = "Idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("RootMesh/RightShoulder:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("RootMesh/LeftShoulder:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("RootMesh/LeftHip:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("RootMesh/RightHip:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RootMesh:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("RootMesh/Head:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=67]
+resource_name = "Walk"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("RootMesh/RightShoulder:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 45, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( -45, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("RootMesh/LeftShoulder:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( -45, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 45, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("RootMesh/LeftHip:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( -7, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 7, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("RootMesh/RightHip:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 7, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( -7, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RootMesh:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 15, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, -15, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("RootMesh/Head:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -13, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, 13, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=69]
+animation = "Idle"
+
+[sub_resource type="AnimationNodeAnimation" id=70]
+animation = "Walk"
+
+[sub_resource type="AnimationNodeAnimation" id=71]
+animation = "Fall"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=72]
+blend_point_0/node = SubResource( 69 )
+blend_point_0/pos = Vector2( 0, 0 )
+blend_point_1/node = SubResource( 70 )
+blend_point_1/pos = Vector2( 1, 0 )
+blend_point_2/node = SubResource( 71 )
+blend_point_2/pos = Vector2( 0, -1 )
+
+[sub_resource type="AnimationNodeBlendTree" id=68]
+graph_offset = Vector2( 126, -68 )
+nodes/BlendSpace2D/node = SubResource( 72 )
+nodes/BlendSpace2D/position = Vector2( 680, 0 )
+nodes/output/position = Vector2( 920, 0 )
+node_connections = [ "output", 0, "BlendSpace2D" ]
+
+[node name="Character" type="KinematicBody"]
+collision_mask = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Collision" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RootMesh" type="Spatial" parent="Collision"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightShoulder" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.5, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightArm" type="Spatial" parent="Collision/RootMesh/RightShoulder"]
+transform = Transform( 0.614364, -0.430182, 0, 0.430182, 0.614364, 0, 0, 0, 0.75, 0.2, -0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm7" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0 )
+mesh = SubResource( 30 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm6" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0 )
+mesh = SubResource( 31 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm5" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0 )
+mesh = SubResource( 32 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm4" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+mesh = SubResource( 33 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm3" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm2" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0 )
+mesh = SubResource( 35 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm1" type="MeshInstance" parent="Collision/RootMesh/RightShoulder/RightArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0 )
+mesh = SubResource( 36 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftShoulder" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.5, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftArm" type="Spatial" parent="Collision/RootMesh/LeftShoulder"]
+transform = Transform( 0.614364, 0.430182, 0, -0.430182, 0.614364, 0, 0, 0, 0.75, -0.2, -0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm7" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0 )
+mesh = SubResource( 30 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm6" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0 )
+mesh = SubResource( 31 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm5" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0 )
+mesh = SubResource( 32 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm4" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+mesh = SubResource( 33 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm3" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm2" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0 )
+mesh = SubResource( 35 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arm1" type="MeshInstance" parent="Collision/RootMesh/LeftShoulder/LeftArm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0 )
+mesh = SubResource( 36 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.75, 0, 0.15, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso5" type="MeshInstance" parent="Collision/RootMesh/Torso"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, 0 )
+mesh = SubResource( 37 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso4" type="MeshInstance" parent="Collision/RootMesh/Torso"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0 )
+mesh = SubResource( 38 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso3" type="MeshInstance" parent="Collision/RootMesh/Torso"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0 )
+mesh = SubResource( 39 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso2" type="MeshInstance" parent="Collision/RootMesh/Torso"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
+mesh = SubResource( 40 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Torso1" type="MeshInstance" parent="Collision/RootMesh/Torso"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0 )
+mesh = SubResource( 41 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftHip" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftLeg" type="Spatial" parent="Collision/RootMesh/LeftHip"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg4" type="MeshInstance" parent="Collision/RootMesh/LeftHip/LeftLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+mesh = SubResource( 42 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg3" type="MeshInstance" parent="Collision/RootMesh/LeftHip/LeftLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0 )
+mesh = SubResource( 43 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg2" type="MeshInstance" parent="Collision/RootMesh/LeftHip/LeftLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0 )
+mesh = SubResource( 44 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg1" type="MeshInstance" parent="Collision/RootMesh/LeftHip/LeftLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0 )
+mesh = SubResource( 45 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightHip" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightLeg" type="Spatial" parent="Collision/RootMesh/RightHip"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg4" type="MeshInstance" parent="Collision/RootMesh/RightHip/RightLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+mesh = SubResource( 42 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg3" type="MeshInstance" parent="Collision/RootMesh/RightHip/RightLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0 )
+mesh = SubResource( 43 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg2" type="MeshInstance" parent="Collision/RootMesh/RightHip/RightLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0 )
+mesh = SubResource( 44 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Leg1" type="MeshInstance" parent="Collision/RootMesh/RightHip/RightLeg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0 )
+mesh = SubResource( 45 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Head" type="Spatial" parent="Collision/RootMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mouth1" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, -0.175 )
+mesh = SubResource( 61 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftEye" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06, 0.2, -0.175 )
+mesh = SubResource( 63 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightEye" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06, 0.2, -0.175 )
+mesh = SubResource( 63 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Head3" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.18, 0 )
+mesh = SubResource( 48 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Head2" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.045, 0 )
+mesh = SubResource( 49 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Head1" type="MeshInstance" parent="Collision/RootMesh/Head"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.00999999, 0 )
+mesh = SubResource( 50 )
+skeleton = NodePath("../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hat" type="Spatial" parent="Collision/RootMesh/Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hat4" type="MeshInstance" parent="Collision/RootMesh/Head/Hat"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.325, 0 )
+mesh = SubResource( 52 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hat3" type="MeshInstance" parent="Collision/RootMesh/Head/Hat"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.25, 0 )
+mesh = SubResource( 53 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hat2" type="MeshInstance" parent="Collision/RootMesh/Head/Hat"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.15, 0 )
+mesh = SubResource( 54 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hat1" type="MeshInstance" parent="Collision/RootMesh/Head/Hat"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.05, 0 )
+mesh = SubResource( 55 )
+skeleton = NodePath("../../../..")
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Collision"]
+anims/Fall = SubResource( 65 )
+anims/Idle = SubResource( 66 )
+anims/Walk = SubResource( 67 )
+
+[node name="View" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RotView" type="Spatial" parent="View"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ClippedCamera" type="ClippedCamera" parent="View/RotView"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+current = true
+far = 200.0
+process_mode = 1
+collision_mask = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 68 )
+anim_player = NodePath("../Collision/AnimationPlayer")
+active = true
+parameters/BlendSpace2D/blend_position = Vector2( 0, 0 )
+
+[node name="Fade" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
